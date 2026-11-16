@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI & Generative Search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://unknownphilosopher.org/sitemap.xml
