@@ -135,7 +135,8 @@ a:hover {
   color: #e4c170;
 }
 
-ul {
+ul,
+ol {
   padding-left: 1.35rem;
   margin-bottom: 1.5rem;
 }
@@ -158,6 +159,11 @@ li {
   padding: 1.75rem;
 }
 
+section > .card + .card,
+section > article.card {
+  margin-top: 1.5rem;
+}
+
 .highlight-box {
   border-left: 3px solid var(--accent-gold);
 }
@@ -169,7 +175,8 @@ li {
   margin: 1.5rem 0 2rem;
 }
 
-.grid-3 .card h3 {
+.grid-3 .card h3,
+.grid-3 > article.card {
   margin-top: 0;
 }
 
@@ -222,6 +229,10 @@ tr:last-child td {
   font-size: 0.96rem;
 }
 
+.callout h3 {
+  margin-top: 0;
+}
+
 /* Network List */
 .network-list li {
   margin-bottom: 0.8rem;
@@ -238,10 +249,29 @@ code {
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
-  padding: 2rem 0;
+  padding: 2.25rem 0;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.88rem;
+}
+
+.footer-constellation {
+  max-width: 720px;
+  margin: 0 auto 1.15rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: var(--text-muted);
+}
+
+.footer-constellation a {
+  text-decoration: none;
+  padding: 0.1rem 0.25rem;
+}
+
+.footer-constellation a:hover {
+  text-decoration: underline;
 }
 
 .footer-note {
